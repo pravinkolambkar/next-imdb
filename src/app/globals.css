@@ -19,6 +19,22 @@
   }
 }
 
+html {
+  color-scheme: dark light;
+}
+
+[currentTheme = 'light'] {
+  color-scheme: light;
+  --background: #252222;
+  --foreground: #c7b0b0;
+}
+
+[currentTheme = 'dark'] {
+  color-scheme: dark;
+  --background: #c7b0b0;
+  --foreground: #252222;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
